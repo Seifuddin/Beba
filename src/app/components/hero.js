@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Portfolio from './Portfolio';
@@ -39,21 +40,19 @@ export default function Hero() {
           Premium rides for every journey. Experience comfort, safety and convenience like never before. Travel stress-free with professional drivers and reliable service. Book your ride now!
         </motion.p>
 
-        <a
-            href="#portfolio"
-            className=" bg-orange-600 text-white px-6 p-2 mx-1 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
-          >
-            Book Ride
-          </a>
+          <Link
+  href="../login"
+  className="bg-blue-600 text-white px-6 p-2 rounded-md text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
+>
+  Book a Ride
+</Link>
 
-          <a
-            href="#portfolio"
-            className=" bg-blue-600 text-white px-6 p-2 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
-          >
-            Login
-          </a>
-
-
+<Link
+  href="/book"
+  className="bg-orange-700 mx-2 text-white px-6 p-2 rounded-md text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
+>
+  Login
+</Link>
 
           <div className='flex relative mt-5 gap-1'>
             <Portfolio />
