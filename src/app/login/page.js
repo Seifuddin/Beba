@@ -24,14 +24,14 @@ export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-200">
       <form onSubmit={handleSubmit} className="p-6 bg-gray-200 shadow-md rounded-lg">
-        <h2 className="text-lg font-bold mb-4">Login</h2>
+        <h2 className="text-lg font-bold mb-4 text-gray-900">Login</h2>
         <input
           type="text"
           name="username"
           placeholder="Username"
           value={formData.username}
           onChange={handleChange}
-          className="border p-2 w-full mb-2 bg-gray-50"
+          className="border p-2 w-full mb-2 bg-gray-50 text-gray-700"
         />
         <input
           type="password"
@@ -39,7 +39,7 @@ export default function Login() {
           placeholder="Password"
           value={formData.password}
           onChange={handleChange}
-          className="border p-2 w-full mb-2 bg-gray-100"
+          className="border p-2 w-full mb-2 bg-gray-100 text-gray-700"
         />
         <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">
           Sign In

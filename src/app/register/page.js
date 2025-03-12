@@ -27,13 +27,13 @@ export default function Register() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200 p-5">
-      <h1 className="text-2xl font-bold mb-4">Register</h1>
+      <h1 className="text-2xl font-bold mb-4 text-gray-900">Register</h1>
       <form className="flex flex-col gap-3 w-80 " onSubmit={handleSubmit}>
         <input
           type="text"
           name="username"
           placeholder="Username"
-          className="border p-2 rounded"
+          className="border p-2 rounded text-gray-700"
           onChange={handleChange}
           required
         />
@@ -41,7 +41,7 @@ export default function Register() {
           type="password"
           name="password"
           placeholder="Password"
-          className="border p-2 rounded"
+          className="border p-2 rounded text-gray-700"
           onChange={handleChange}
           required
         />
