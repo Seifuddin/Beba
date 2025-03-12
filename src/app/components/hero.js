@@ -41,14 +41,14 @@ export default function Hero() {
         </motion.p>
 
           <Link
-  href="../login"
+  href="../book"
   className="bg-blue-600 text-white px-6 p-2 rounded-md text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
 >
   Book a Ride
 </Link>
 
 <Link
-  href="/book"
+  href="/login"
   className="bg-orange-700 mx-2 text-white px-6 p-2 rounded-md text-lg font-semibold hover:bg-orange-600 transition-all duration-300"
 >
   Login
