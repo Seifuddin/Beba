@@ -11,9 +11,13 @@
   "dependencies": {
     "axios": "^1.8.2",
     "framer-motion": "^12.4.11",
+    "leaflet": "^1.9.4",
     "next": "15.2.1",
+    "openrouteservice-js": "^0.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-leaflet": "^5.0.0",
+    "react-select": "^5.10.1",
     "swiper": "^11.2.5"
   },
   "devDependencies": {
