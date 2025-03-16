@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import LeafletMap from "./LeafletMap";
+import LeafletMap from "./Map";
 
 const RideBookingForm = () => {
   const [from, setFrom] = useState(null);
@@ -61,12 +61,16 @@ const RideBookingForm = () => {
 
   return (
     <div className="p-6 max-w-lg mx-auto bg-white rounded-lg shadow-md">
-      <h2 className="text-xl font-bold text-center mb-4 text-gray-700">Book a Ride</h2>
+      <h2 className="text-xl font-bold text-center mb-4 text-gray-700">
+        Book a Ride
+      </h2>
 
       {/* Locations */}
       <div className="space-y-4">
         <div>
-          <label className="block text-gray-600 font-medium">From Location:</label>
+          <label className="block text-gray-600 font-medium">
+            From Location:
+          </label>
           <button
             onClick={() => handleSelectLocation("from", -1.286389, 36.817223)}
             className="w-full mt-1 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition"
@@ -76,7 +80,9 @@ const RideBookingForm = () => {
         </div>
 
         <div>
-          <label className="block text-gray-600 font-medium">To Location:</label>
+          <label className="block text-gray-600 font-medium">
+            To Location:
+          </label>
           <button
             onClick={() => handleSelectLocation("to", -1.2921, 36.8219)}
             className="w-full mt-1 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition"
@@ -111,7 +117,8 @@ const RideBookingForm = () => {
       {/* Fare Display */}
       {fare !== null && (
         <p className="text-center mt-4 text-lg font-semibold text-gray-700">
-          Estimated Fare: <span className="text-green-500">Ksh {fare.toFixed(2)}</span>
+          Estimated Fare:{" "}
+          <span className="text-green-500">Ksh {fare.toFixed(2)}</span>
         </p>
       )}
 
